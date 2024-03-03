@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts file -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- font awesome file -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Bootstrap css file -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Weather</title>
+</head>
+<body id="body">
+  <nav class="our_navbar h-100 p-3">
+    <div class="container">
+      <div class="row ">
+        <div class="logo col-md-4">
+        <a href="" class="text-uppercase">weathre <span class="def">app</span></a>
+      </div>
+      <div class="search_input col-md-6">
+        <input id="searchInput" type="search" class="form-control mb-lg-0 mb-sm-2" placeholder="enter Your City..." autofocus>
+      </div>
+      <div class="col-md-2">
+        <input type="button" class="btn w-100" value="search" id="search">
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row g-1">
+        <div  class="todayBox card col-12 " id="todayBox">
+          <div class="d-flex justify-content-between w-100">
+            <div class="curent_det">
+              <div class="location" id="location">
+                  <h3  id="city">cairo</h3>
+              </div>
+              <div class="date shadow-lg" id="date">
+                <h3 id="today">Friday</h3>
+                <span id="todayDate">19/1/2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="todayIconStats"><img src="" alt="" id="todayIconStats"></div>
+            <span id="todayDegree"></span>
+          </div>
+          <span id="todayStats">suny</span>
+      </div>
+          <div id="dayTowBox" class="col-md-2  card futre">
+          <h5 id="dayTow">Sat</h5>
+          <img src="" alt="" id="dayTowImg">
+          <div id="dayTowDegree">22*</div>
+          <div class="stats_of" id="towDayStats">suny</div>
+        </div>
+        <div id="dayThreeBox" class="col-md-2 ms-1 card futre">
+            <h5 id="dayThree">Sat</h5>
+            <img src="" alt="" id="dayThreeImg">
+            <div id="dayThreeDegree">22*</div>
+            <div class="stats_of" id="threeDayStats">suny</div>
+        </div>
+        <!-- <div id="dayFourBox" class="col-md-2 ms-1 card futre">
+            <h5 id="dayFour">Sat</h5>
+            <img src="" alt="" id="dayFourImg">
+            <div id="dayFourDegree">22*</div>
+            <div class="stats_of" id="fourDayStats">suny</div>
+        </div> -->
+        <div class="mb-5">
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- main JS file -->
+  <script src="js/main.js"></script>
+  <!-- bootstrap JS file -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

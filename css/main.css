@@ -1,0 +1,123 @@
+
+:root {
+    --main_transition: 0.35s;
+    --main_color: #0B2447;
+    --altrnate_color:#19376D;
+    --contrast_color:#A5D7E8;
+    --light_color: #576CBC;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+body {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.364) 0%, rgba(0, 0, 0) 100%) , url(../images/pexels-eberhard-grossgasteiger-629162.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.our_navbar {
+    background-color: var(--main_color);
+
+}
+
+.our_navbar .logo a {
+    font-size: 25px;
+    color: white;
+    font-weight: 800;
+}
+
+.our_navbar .logo .def {
+    color: var(--contrast_color);
+}
+
+.our_navbar #search {
+    color: white;
+    border: 2px solid var(--contrast_color);
+    transition:all var(--main_transition);
+}
+
+main {
+    margin-top: 5rem;
+    color: white;
+}
+
+
+#todayBox {
+    background-color: #232931;
+    min-height: 400px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#todayBox h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#todayBox .todayIconStats {
+    align-self: self-end;
+    justify-content: flex-start;
+}
+
+#todayBox .todayIconStats img {
+    width: 80px;
+    height: 80px;
+}
+
+#todayBox #todayDegree {
+    font-size: 80px;
+    font-weight: 800;
+    display: inline-block;
+}
+.date , .location {
+    /* background-color: white; */
+    width: fit-content;
+    padding: 2rem;
+    /* background-color: var(--altrnate_color); */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    align-self: self-start;
+    order: 0;
+}
+
+.curent_det {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#todayStats {
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+
+.futre {
+    min-height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.futre i {
+    font-size: 30px;
+}
+
+.futre h5 {
+    align-self: self-start;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width : 500px) {
+    html {
+        font-size: 14px;
+    }
+}
